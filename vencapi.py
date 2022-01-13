@@ -63,7 +63,7 @@ class VencOSD:
         command = self.url + "&bcolor={}".format(colour)
         requests.get(command)
 
-    def set_osd(self, enable=None, x=None, y=None, alpha=None, font_size=None, color=None, bcolor=None, txt=None):
+    def set_osd(self, enable=None, x=None, y=None, alpha=None, font_size=None, colour=None, bcolour=None, txt=None):
         command = self.url
         if enable is not None:
             command = command + "&enable={}".format(enable)
@@ -75,9 +75,9 @@ class VencOSD:
             command = command + "&alpha={}".format(alpha)
         if font_size is not None:
             command = command + "&font_size={}".format(font_size) 
-        if color is not None:
+        if colour is not None:
             command = command + "&color={}".format(color) 
-        if bcolor is not None:
+        if bcolour is not None:
             command = command + "&bcolor={}".format(bcolor)
         if txt is not None:
             command = command + "&txt={}".format(txt)
