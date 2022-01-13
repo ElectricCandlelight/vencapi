@@ -19,7 +19,7 @@ zone1.text_colour(0) #Not sure what value it is expecting here
 zone1.background(0)
 
 #Change multiple settings at one time
-zone1.set_osd(enable=1, x=20, y=20, alpha=64, font_size=72, color=0, bcolor=0, txt="Zone1")
+zone1.set_osd(enable=1, x=20, y=20, alpha=64, font_size=72, colour=0, bcolour=0, txt="Zone1")
 
 #Don't need to specify all arguments. can pick just the ones you need 
 zone1.set_osd(x=20, y=20) 
