@@ -24,8 +24,8 @@ class VencAPI:
 
 
 class VencOSD:
-    def __init__(self, URayTechAPI, osd_id):
-        self.url = URayTechAPI.url + "set_osd?enc_chn={}&osd_chn={}".format(URayTechAPI.output_id, osd_id)
+    def __init__(self, VencAPI, osd_id):
+        self.url = VencAPI.url + "set_osd?enc_chn={}&osd_chn={}".format(VencAPI.output_id, osd_id)
 
     def show(self):
         command = self.url + "&enable=1"
