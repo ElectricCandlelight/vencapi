@@ -22,6 +22,13 @@ class VencAPI:
         command = self.url + "get_status"
         requests.get(command)
 
+    def start_stream(self):
+        command = self.url + "set_output?output={}&rtmp_publish_enable=1".format(self.output_id)
+        requests.get(command)
+    
+    def stop_stream(self):
+        command = self.url + "set_output?output={}&rtmp_publish_enable=0".format(self.output_id)
+        requests.get(command)
 
 class VencOSD:
     def __init__(self, VencAPI, osd_id):

@@ -39,3 +39,5 @@ change = {"enable":1, "x":400, "y":400, "txt":"Move and change text"}
 osd_seq2.sequence([[zone1.set_osd, 10, kofi], [zone1.set_osd, 10, change]])
 
 time.sleep(70)
+
+output0.stop_stream()
