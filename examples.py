@@ -34,9 +34,9 @@ osd_seq.sequence_stop() #Stops the loop
 
 #Using set_osd with sequence
 osd_seq2 = VencSequence()
-kofi = {"enable":1, "x":20, "y":20, "txt":"kofi.com/1030jh"} #Store all the setting you want to change in a dict
+original = {"enable":1, "x":20, "y":20, "txt":"original text"} #Store all the setting you want to change in a dict
 change = {"enable":1, "x":400, "y":400, "txt":"Move and change text"}
-osd_seq2.sequence([[zone1.set_osd, 10, kofi], [zone1.set_osd, 10, change]])
+osd_seq2.sequence([[zone1.set_osd, 10, original], [zone1.set_osd, 10, change]])
 
 time.sleep(70)
 
