@@ -76,9 +76,9 @@ class VencOSD:
         if font_size is not None:
             command = command + "&font_size={}".format(font_size) 
         if colour is not None:
-            command = command + "&color={}".format(color) 
+            command = command + "&color={}".format(colour) 
         if bcolour is not None:
-            command = command + "&bcolor={}".format(bcolor)
+            command = command + "&bcolor={}".format(bcolour)
         if txt is not None:
             command = command + "&txt={}".format(txt)
         requests.get(command)
